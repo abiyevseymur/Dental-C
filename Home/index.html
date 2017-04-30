@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Dental Clinic</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<!-- Stylesheets and Frameworks -->
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald%7CLato:400italic,400,700">
+	<link rel="stylesheet" href="css/style.css+bootstrap+faIcons+pluginStyles.min.css">
+	<!-- Scripts and Plugins -->
+	<script src="js/bootstrap+jquery-3.2.1.+owlCarousel+scrollUp.min.js"></script>
+</head>
+
+<body>
+	<!--    HEADER BEGIN   -->
+	<header>
+		<div class="openmenu"> <i id="x" class="fa fa-bars" aria-hidden="true"></i> </div>
+		<div class="leftmenu uppercase">
+			<input type="text" class="form-control" id="menu_search" placeholder="Search">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li>About</li>
+				<li>Team</li>
+				<li id='pages'>Pages<i class="fa fa-angle-down" aria-hidden="true"></i></li>
+				<ul id='openpages'>
+					<li><a href='../Others/typography.html'><i class="fa fa-angle-right" aria-hidden="true"></i>Typography</a></li>
+					<li><a href='../Others/forms.html'><i class="fa fa-angle-right" aria-hidden="true"></i>Forms</a></li>
+					<li><a href='../Others/buttons.html'><i class="fa fa-angle-right" aria-hidden="true"></i>Buttons</a></li>
+					<li><a href='../Others/grid-system.html'><i class="fa fa-angle-right" aria-hidden="true"></i>Grid</a></li>
+					<li><a href='../Others/tabs-and-accordions.html'><i class="fa fa-angle-right" aria-hidden="true"></i>Tabs & Accordions</a></li>
+					<li><a href='../Others/progressbar.html'><i class="fa fa-angle-right" aria-hidden="true"></i>Progress Bars</a></li>
+					<li><a href='#'><i class="fa fa-angle-right" aria-hidden="true"></i>Icons</a></li>
+					<li><a href='#'><i class="fa fa-angle-right" aria-hidden="true"></i>Tables</a></li>
+					<li><a href='#'><i class="fa fa-angle-right" aria-hidden="true"></i>Team member profile</a></li>
+					<li><a href='#'><i class="fa fa-angle-right" aria-hidden="true"></i>Careers</a></li>
+					<li><a href='#'><i class="fa fa-angle-right" aria-hidden="true"></i>FAQ Page</a></li>
+					<li><a href='#'><i class="fa fa-angle-right" aria-hidden="true"></i>Pricing</a></li>
+					<li><a href='#'><i class="fa fa-angle-right" aria-hidden="true"></i>Coming Soon</a></li>
+					<li><a href='#'><i class="fa fa-angle-right" aria-hidden="true"></i>Maintenance</a></li>
+					<li><a href='#'><i class="fa fa-angle-right" aria-hidden="true"></i>Under Construction</a></li>
+					<li><a href='#'><i class="fa fa-angle-right" aria-hidden="true"></i>Login/Register</a></li>
+					<li><a href='#'><i class="fa fa-angle-right" aria-hidden="true"></i>Clients</a></li>
+					<li><a href='#'><i class="fa fa-angle-right" aria-hidden="true"></i>Partners</a></li>
+					<li><a href='#'><i class="fa fa-angle-right" aria-hidden="true"></i>Terms Of Use</a></li>
+					<li><a href='#'><i class="fa fa-angle-right" aria-hidden="true"></i>Search Results</a></li>
+					<li><a href='#'><i class="fa fa-angle-right" aria-hidden="true"></i>404 Page</a></li>
+					<li><a href='#'><i class="fa fa-angle-right" aria-hidden="true"></i>503 Page</a></li>
+					<li><a href='../Others/calendar.html'><i class="fa fa-angle-right" aria-hidden="true"></i>Make An Appointment</a></li>
+				</ul>
+				<li>Services</li>
+				<li>Departments</li>
+				<li>Timetable</li>
+				<li id='gallery'>Gallery<i class="fa fa-angle-down" aria-hidden="true"></i></li>
+				<ul id='opengallery'>
+					<li><a href='#'><i class="fa fa-angle-right" aria-hidden="true"></i>Grid Gallery</a></li>
+					<li><a href='#'><i class="fa fa-angle-right" aria-hidden="true"></i>Gallery Without Padding</a></li>
+					<li><a href='#'><i class="fa fa-angle-right" aria-hidden="true"></i>Masonry Gallery</a></li>
+					<li id='last'><a href='#'><i class="fa fa-angle-right" aria-hidden="true"></i>Cobbles Gallery</a></li>
+				</ul>
+				<li>Services</li>
+				<li id='blog'>Blog<i class="fa fa-angle-down" aria-hidden="true"></i></li>
+				<ul id='openblog'>
+					<li><a href='#'><i class="fa fa-angle-right" aria-hidden="true"></i>Masonry Blog</a></li>
+					<li><a href='#'><i class="fa fa-angle-right" aria-hidden="true"></i>Modern Blog</a></li>
+					<li><a href='#'><i class="fa fa-angle-right" aria-hidden="true"></i>Classic Blog</a></li>
+					<li><a href='#'><i class="fa fa-angle-right" aria-hidden="true"></i>Grid Blog</a></li>
+					<li id='last'><a href='#'><i class="fa fa-angle-right" aria-hidden="true"></i>Single Post</a></li>
+				</ul>
+				<li>Contacts</li>
+			</ul>
+		</div>
+		<div class="filter">
+			<div class="container logo-elaqe">
+				<div class="row bashMenu">
+					<div class="col-md-5 col-lg-5">
+						<a href="index.html"><img width='197' height='52' class='img-responsive' src='images/logo.png' alt='' /></a>
+					</div>
+					<div class="hidden-xs hidden-sm col-md-3 col-lg-3">
+						<div class="col-md-2 col-lg-2 social"><i class="fa fa-phone" aria-hidden="true"></i></div>
+						<div class="col-md-9 col-lg-9 nomreler"><a href="">1-800-1234-567</a>
+							<br> <a href="callto:#">1-800-3214-654</a></div>
+					</div>
+					<div class="hidden-xs hidden-sm col-md-4 col-lg-4">
+						<div class="col-md-2 col-lg-2 social"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+						<div class="col-md-10 col-lg-10 adres"><a href="index.html#">2130 Fulton Street San Diego <br> CA 94117-1080 USA</a></div>
+					</div>
+				</div>
+				<div class="row intro">
+					<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+						<div class="respoTextC">
+							<h2 class="esasBasliq">HIGH QUALITY MEDICAL CARE THAT'S FAST AND CONVENIENT</h2>
+							<h5 class="altYazi">Our entire team is dedicated to providing you with the highest standard of quality dental care services that are tailored to meet the specific needs of every member of your family.</h5>
+							<div class="text-center headerBTN"><a href="services.html" class="btn btn-ellipse btn-primary center makeAN">make an appointment</a></div>
+						</div>
+						<div class='headerDots'> <span class='active dot' index='0'></span> <span class='dot' index='1'></span> <span class='dot' index='2'></span> </div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+						<div class="panel panel-lg">
+							<h5>Free Consultation</h5>
+							<form>
+								<div class="group-item">
+									<div class="form-group">
+										<label class="form-label form-label-outside">Name</label>
+										<input type="text" class="form-control"> </div>
+								</div>
+								<div class="group-item">
+									<div class="form-group">
+										<label class="form-label form-label-outside">E-mail</label>
+										<input type="email" class="form-control"> </div>
+								</div>
+								<div class="group-item">
+									<div class="form-group">
+										<label class="form-label form-label-outside">Doctor</label>
+										<div>
+											<select class="form-control">
+												<option value="1">Doctor</option>
+												<option value="2">Nurse</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="">
+									<div class="text-center"><a href="services.html" class="btn btn-ellipse btn-primary center makeAN">book a consultation</a></div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!--    HEADER END   -->
+	<!--    FLEX CARDLAR OLAN HISSE  -->
+	<section class="cardlar clearfix">
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+			<div class="card">
+				<div class="card-header uppercase">
+					<h6>opening hours</h6> </div>
+				<div class="card-body text-left"><i class="fa fa-calendar" aria-hidden="true"></i>
+					<div class="clearfix">
+						<dl> <dt>Mon–Fri</dt>
+							<dd>8:00am–7:00pm</dd>
+						</dl>
+					</div>
+					<div class="clearfix">
+						<dl> <dt>Saturday</dt>
+							<dd>9:00am–5:00pm</dd>
+						</dl>
+					</div>
+					<div class="clearfix">
+						<dl> <dt>Sunday</dt>
+							<dd>9:00am–3:00pm</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--II Card-->
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+			<div class="card">
+				<div class="card-header uppercase">
+					<h6 class="">doctors’ timetable</h6> </div>
+				<div class="card-body"><i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+					<div class="">
+						<p class="text-gray-darker">The timetable is for guidance only to help you plan your appointment with a preferred doctor or nurse. It does not guarantee availability as our doctors or nurses may sometimes be attending to other duties. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--III Card-->
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+			<div class="card">
+				<div class="card-header uppercase">
+					<h6>appointments</h6> </div>
+				<div class="card-body"><i class="fa fa-phone" aria-hidden="true"></i>
+					<div>
+						<p class="text-gray-darker">The first step towards a healthy life is to schedule an appointment. Please contact our office by phone or complete the appointment request form.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--IV Card-->
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+			<div class="card">
+				<div class="card-header uppercase">
+					<h6>emergency cases</h6> </div>
+				<div class="card-body"><i class="fa fa-heart" aria-hidden="true"></i>
+					<div class="">
+						<h5 class="darker"><a href="callto:#" class="darker">1-800-1234-567</a></h5> </div>
+					<div class="">
+						<p class="text-gray-darker">Call us!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--    WHY DENTA-C OLAN HISSE  -->
+	<section class="denta-C clearfix">
+		<div class="container">
+			<div class="row">
+				<h3 class="uppercase basliq-shrifti">Why Choose DentA-C?</h3>
+				<hr class="xett xett-lg"> </div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 icon-collari">
+					<div class="">
+						<div class="media">
+							<div class="media-left media-middle icon-media">
+								<a href="#"> <i class="fa fa-hospital-o" aria-hidden="true"></i> </a>
+							</div>
+							<div class="media-body"> <strong><h5>Easy Booking</h5></strong>
+								<p>Booking an appointment at our dental clinic is as easy as doing 2 clicks! They are ready to put it</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--II Sebeb-->
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 icon-collari">
+					<div class="media">
+						<div class="media-left media-middle icon-media">
+							<a href="#"> <i class="fa fa-user-md" aria-hidden="true"></i> </a>
+						</div>
+						<div class="media-body"> <strong><h5>Experience</h5></strong>
+							<p>Combined, our 5 dentists have over half a century of practical experience. They are ready to put it to action for you!</p>
+						</div>
+					</div>
+				</div>
+				<!--III Sebeb-->
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 icon-collari">
+					<div class="media">
+						<div class="media-left media-middle icon-media">
+							<a href="#"> <i class="fa fa-ambulance" aria-hidden="true"></i> </a>
+						</div>
+						<div class="media-body"> <strong><h5>Best Price Guarantee</h5></strong>
+							<p>Our reasonable prices made thousands of people smile with a new, beautiful smile, as never before!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--    OUR SERVICS OLAN HISSE  -->
+	<section class="services clearfix">
+		<div class="container">
+			<div class="row">
+				<h3 class="uppercase basliq-shrifti">Our Services</h3>
+				<hr class="xett xett-lg"> </div>
+			<div class="row">
+				<p class="service-paraqraf">We provide high-quality health care services for the whole family.</p>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 hekimler">
+					<div class="service"><img src="images/pages/home-01-320x320.jpg" width="320" height="320" alt="" class="img-responsive" /> <a href="services.html" class="service-desc uppercase">General Care</a> </div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 hekimler">
+					<div class="service"><img src="images/pages/home-02-320x320.jpg" width="320" height="320" alt="" class="img-responsive" /> <a href="services.html" class="service-desc uppercase">Cosmetic Dentistry</a> </div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 hekimler">
+					<div class="service"><img src="images/pages/home-03-320x320.jpg" width="320" height="320" alt="" class="img-responsive" /> <a href="services.html" class="service-desc uppercase">Restorative Dentistry</a> </div>
+				</div>
+				<div class="row rowMargin0">
+					<div class="serviceBtn"><a href="services.html" class="btn btn-ellipse btn-primary center makeAN">View all services</a></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--    YARI-YARI OLAN HISSE  -->
+	<section class="iki-hisseli clearfix">
+		<div class="container-fluid">
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 Iteref">
+				<div class="row">
+					<div class="qutu">
+						<h2 class="uppercase">Quality Services & Best Prices</h2>
+						<p class="qutu-p">Denta-C provides a vast range of dental care services for our patients. You can find the full list of services or order a free consultation if you are interested in general dental care.</p>
+						<div class="row rowMargin0">
+							<div class=""><a href="services.html" class="btn btn-ellipse btn-primary center">free consultation</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 IIteref">
+				<h3 class="uppercase basliq-shrifti">testimonials</h3>
+				<hr class="xett xett-lg">
+				<div class="owl-carousel owl-theme owl-birinci-carusel">
+					<div id="sitatliAdam" class="col-md-12">
+						<div class="row rowMargin0">
+							<div class="col-md-12 ust">
+								<div class="row"> <i class="fa fa-quote-left" aria-hidden="true"></i>
+									<p>I urgently required dental help on July, 4. And despite all other clinics being closed, Denta-C took my appointment!</p>
+								</div>
+							</div>
+							<div class="col-md-12 alt">
+								<div class="row clear-fix">
+									<div class="alt_img"> <img src="images/users/user-herbert-wallace-60x60.jpg" class="img-ellipsis" alt=""> </div>
+									<div class="alt_description">
+										<div class="row">
+											<h3>Herbert Wallace</h3>
+											<p>Patient</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="sitatliAdam" class="col-md-12">
+						<div class="row rowMargin0">
+							<div class="col-md-12 ust">
+								<div class="row"> <i class="fa fa-quote-left" aria-hidden="true"></i>
+									<p>Comparing teeth whitening prices here and elsewhere, I picked Denta-C. The result was beyond my expectations!</p>
+								</div>
+							</div>
+							<div class="col-md-12 alt">
+								<div class="row clear-fix">
+									<div class="alt_img"> <img src="images/users/user-gary-growles-60x60.jpg" class="img-ellipsis" alt=""> </div>
+									<div class="alt_description">
+										<div class="row">
+											<h3>Gary Growles</h3>
+											<p>Patient</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="sitatliAdam" class="col-md-12">
+						<div class="row rowMargin0">
+							<div class="col-md-12 ust">
+								<div class="row"> <i class="fa fa-quote-left" aria-hidden="true"></i>
+									<p>Taking my kids to a dentist has never been easier. They just loved welcoming and warm atmosphere in!</p>
+								</div>
+							</div>
+							<div class="col-md-12 alt">
+								<div class="row clear-fix">
+									<div class="alt_img"> <img src="images/users/user-betty-wade-60x60.jpg" class="img-ellipsis" alt=""> </div>
+									<div class="alt_description">
+										<div class="row">
+											<h3>Daniela Smith</h3>
+											<p>Patient</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--    SLIDER OLAN HISSE HISSE -->
+	<section class="esasSlider clearfix">
+		<div class="container">
+			<div class="row">
+				<h3 class="uppercase basliq-shrifti">Our Services</h3>
+				<hr class="xett xett-lg"> </div>
+			<div class="owl-carousel owl-theme owl-ikinci-carusel">
+				<div class="owl-item owl_width col-md-4 col-lg-4 owl-ikinci-item">
+					<div class="unit-left"><img src="images/users/user-scott-riley-110x110.jpg" width="110" height="110" alt="" class="img-responsive" /> </div>
+					<div class="unit-body">
+						<h5>Scott Riley</h5>
+						<p>Chief Medical Officer</p>
+						<div>
+							<div class="unit-left" id="telefon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+							<div class="unit-body" id="nomre"><a href="callto:#">1-800-1234-567</a></div>
+						</div>
+					</div>
+					<br>
+					<p id="ikinciP">Our clinic's Chief Dental Officer, Dr. Scott Riley has been working in this field of medical specialization since 2002.</p><a href="team-member.html" class="btn btn-ellipse btn-primary">learn more</a> </div>
+				<!--I HEKIM-->
+				<div class="owl-item owl_width col-md-4 col-lg-4 owl-ikinci-item">
+					<div class="unit-left"><img src="images/users/user-leslie-gross-110x110.jpg" width="110" height="110" alt="" class="img-responsive" /> </div>
+					<div class="unit-body">
+						<h5>Leslie Gross</h5>
+						<p>Dental Hygienist</p>
+						<div>
+							<div class="unit-left" id="telefon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+							<div class="unit-body" id="nomre"><a href="callto:#">1-800-1234-567</a></div>
+						</div>
+					</div>
+					<br>
+					<p id="ikinciP">Leslie is one of the most experienced dental hygienists in the country. She works at our dental clinic since day 1.</p><a href="team-member.html" class="btn btn-ellipse btn-primary">learn more</a> </div>
+				<!--II HEKIM-->
+				<div class="owl-item  owl_width col-md-4 col-lg-4 owl-ikinci-item">
+					<div class="unit-left"><img src="images/users/user-dana-sms-110x110.jpg" width="110" height="110" alt="" class="img-responsive" /> </div>
+					<div class="unit-body">
+						<h5>Dana Sims</h5>
+						<p>Practical Nurse</p>
+						<div>
+							<div class="unit-left" id="telefon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+							<div class="unit-body" id="nomre"><a href="callto:#">1-800-1234-567</a></div>
+						</div>
+					</div>
+					<br>
+					<p id="ikinciP">Dana previously served as a senior practical nurse at the Mayo clinic. She obtained her license by working hard after graduating from a ..</p><a href="team-member.html" class="btn btn-ellipse btn-primary">learn more</a> </div>
+				<!--III HEKIM-->
+				<div class="owl-item  owl_width col-md-4 col-lg-4 owl-ikinci-item">
+					<div class="unit-left"><img src="images/users/user-scott-riley-110x110.jpg" width="110" height="110" alt="" class="img-responsive" /> </div>
+					<div class="unit-body">
+						<h5>Scott Riley</h5>
+						<p>Chief Medical Officer</p>
+						<div>
+							<div class="unit-left" id="telefon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+							<div class="unit-body" id="nomre"><a href="callto:#">1-800-1234-567</a></div>
+						</div>
+					</div>
+					<br>
+					<p id="ikinciP">Our clinic's Chief Dental Officer, Dr. Scott Riley has been working in this field of medical specialization since 2002.</p><a href="team-member.html" class="btn btn-ellipse btn-primary">learn more</a> </div>
+				<!--IV HEKIM-->
+				<div class="owl-item  owl_width col-md-4 col-lg-4 owl-ikinci-item">
+					<div class="unit-left"><img src="images/users/user-leslie-gross-110x110.jpg" width="110" height="110" alt="" class="img-responsive" /> </div>
+					<div class="unit-body">
+						<h5>Leslie Gross</h5>
+						<p>Dental Hygienist</p>
+						<div>
+							<div class="unit-left" id="telefon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+							<div class="unit-body" id="nomre"><a href="callto:#">1-800-1234-567</a></div>
+						</div>
+					</div>
+					<br>
+					<p id="ikinciP">Leslie is one of the most experienced dental hygienists in the country. She works at our dental clinic since day 1.</p><a href="team-member.html" class="btn btn-ellipse btn-primary">learn more</a> </div>
+				<!--V HEKIM-->
+				<div class="owl-item  owl_width col-md-4 col-lg-4 owl-ikinci-item">
+					<div class="unit-left"><img src="images/users/user-dana-sms-110x110.jpg" width="110" height="110" alt="" class="img-responsive" /> </div>
+					<div class="unit-body">
+						<h5>Dana Sims</h5>
+						<p>Practical Nurse</p>
+						<div>
+							<div class="unit-left" id="telefon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+							<div class="unit-body" id="nomre"><a href="callto:#">1-800-1234-567</a></div>
+						</div>
+					</div>
+					<br>
+					<p id="ikinciP">Dana previously served as a senior practical nurse at the Mayo clinic. She obtained her license by working hard after graduating from a ..</p><a href="team-member.html" class="btn btn-ellipse btn-primary">learn more</a> </div>
+				<!--VI HEKIM-->
+				<div class="owl-item  owl_width col-md-4 col-lg-4 owl-ikinci-item">
+					<div class="unit-left"><img src="images/users/user-scott-riley-110x110.jpg" width="110" height="110" alt="" class="img-responsive" /> </div>
+					<div class="unit-body">
+						<h5>Scott Riley</h5>
+						<p>Chief Medical Officer</p>
+						<div>
+							<div class="unit-left" id="telefon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+							<div class="unit-body" id="nomre"><a href="callto:#">1-800-1234-567</a></div>
+						</div>
+					</div>
+					<br>
+					<p id="ikinciP">Our clinic's Chief Dental Officer, Dr. Scott Riley has been working in this field of medical specialization since 2002.</p><a href="team-member.html" class="btn btn-ellipse btn-primary">learn more</a> </div>
+				<!--VII HEKIM-->
+				<div class="owl-item  owl_width col-md-4 col-lg-4 owl-ikinci-item">
+					<div class="unit-left"><img src="images/users/user-leslie-gross-110x110.jpg" width="110" height="110" alt="" class="img-responsive" /> </div>
+					<div class="unit-body">
+						<h5>Leslie Gross</h5>
+						<p>Dental Hygienist</p>
+						<div>
+							<div class="unit-left" id="telefon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+							<div class="unit-body" id="nomre"><a href="callto:#">1-800-1234-567</a></div>
+						</div>
+					</div>
+					<br>
+					<p id="ikinciP">Leslie is one of the most experienced dental hygienists in the country. She works at our dental clinic since day 1.</p><a href="team-member.html" class="btn btn-ellipse btn-primary">learn more</a> </div>
+				<!--VIII HEKIM-->
+				<div class="owl-item  owl_width col-md-4 col-lg-4 owl-ikinci-item">
+					<div class="unit-left"><img src="images/users/user-dana-sms-110x110.jpg" width="110" height="110" alt="" class="img-responsive" /> </div>
+					<div class="unit-body">
+						<h5>Dana Sims</h5>
+						<p>Practical Nurse</p>
+						<div>
+							<div class="unit-left" id="telefon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+							<div class="unit-body" id="nomre"><a href="callto:#">1-800-1234-567</a></div>
+						</div>
+					</div>
+					<br>
+					<p id="ikinciP">Dana previously served as a senior practical nurse at the Mayo clinic. She obtained her license by working hard after graduating from a ..</p><a href="team-member.html" class="btn btn-ellipse btn-primary">learn more</a> </div>
+				<!--IX HEKIM-->
+			</div>
+			<!--Carusel END-->
+		</div>
+		<!--CONTAINER END-->
+	</section>
+	<!--    FEATURED DENTAL NEWS OLAN HISSE SON -->
+	<section class="featured clearfix">
+		<div class="container-fluid">
+			<div class="row">
+				<h3 class="text-center uppercase basliq-shrifti">Featured Dental News</h3>
+				<hr class="xett xett-lg"> </div>
+			<div class="row rowMargin0">
+				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 dentalNews">
+					<article class="post post-modern post-modern-classic">
+						<div class="post-media"><img width="443" height="280" src="images/blog/post-01-443x280.jpg" alt="" class="img-responsive img-cover"></div>
+						<section class="post-content text-left">
+							<div class="post-title">
+								<h5 class="text-goy-bold margin-Bttn"><a href="single-post.html"><strong>First signs of Gum Disease</strong></a></h5> </div>
+							<ul class="list-inline list-inline-dashed margin-Bttn">
+								<li>June 21, 2016 at 8:12pm |</li>
+								<li><a href="blog-masonry.html" class="dental">Dental</a></li>
+							</ul>
+							<div class="text-dark-grey margin-Bttn">
+								<p>Gums disease is preceded by few very distinct symptoms. One of these is when you spit out blood after brushing your teeth...</p>
+							</div>
+							<div class="tags group group-sm"><a href="index.html#" class="featured-btn btn btn-default">Dental</a><a href="index.html#" class="featured-btn btn btn-default">Gum</a> <a href="index.html#" class="featured-btn btn btn-default">Disease</a> </div>
+						</section>
+					</article>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 dentalNews">
+					<article class="post post-modern post-modern-classic ">
+						<div class="post-media"><img width="443" height="280" src="images/blog/post-02-442x285.jpg" alt="" class="img-responsive img-cover"></div>
+						<section class="post-content text-left">
+							<div class="post-title">
+								<h5 class="text-goy-bold margin-Bttn"><a href="single-post.html" class="bold"><strong>Basic Dental Care</strong></a></h5> </div>
+							<ul class="list-inline list-inline-dashed margin-Bttn">
+								<li>June 21, 2016 at 8:12pm |</li>
+								<li><a href="blog-masonry.html" class="dental">Dental</a></li>
+							</ul>
+							<div class="text-dark-grey margin-Bttn">
+								<p>Americans oftentimes ignore some basic, daily routines of oral hygiene, that need to be upheld. Practicing healthy habits...</p>
+							</div>
+							<div class="tags group group-sm"><a href="index.html#" class="featured-btn btn btn-default">Dental</a><a href="index.html#" class="featured-btn btn btn-default">Gum</a> <a href="index.html#" class="featured-btn btn btn-default">Disease</a> </div>
+						</section>
+					</article>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 dentalNews">
+					<article class="post post-modern post-modern-classic ">
+						<div class="post-media"><img width="443" height="280" src="images/blog/post-03-443x285.jpg" alt="" class="img-responsive img-cover"></div>
+						<section class="post-content text-left">
+							<div class="post-title">
+								<h5 class="text-goy-bold margin-Bttn"><a href="single-post.html"><strong>Dry Mouth</strong></a></h5> </div>
+							<ul class="list-inline list-inline-dashed margin-Bttn">
+								<li>June 21, 2016 at 8:12pm |</li>
+								<li><a href="blog-masonry.html" class="dental">Dental</a></li>
+							</ul>
+							<div class="text-dark-grey margin-Bttn">
+								<p>With the pace of modern life keeping us busy all the time and the environment conditions in big cities worsening day to day, our oral hygiene is at risk. The dry mouth syndrome...</p>
+							</div>
+							<div class="tags group group-sm"><a href="index.html#" class="featured-btn btn btn-default">Dental</a><a href="index.html#" class="featured-btn btn btn-default">Care</a> <a href="index.html#" class="featured-btn btn btn-default">Dry</a> </div>
+						</section>
+					</article>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 dentalNews">
+					<article class="post post-modern post-modern-classic ">
+						<div class="post-media"><img width="443" height="280" src="images/blog/post-04-442x285.jpg" alt="" class="img-responsive img-cover"></div>
+						<section class="post-content text-left">
+							<div class="post-title">
+								<h5 class="text-goy-bold margin-Bttn"><a href="single-post.html"><strong>Avoiding Bad Breath</strong></a></h5> </div>
+							<ul class="list-inline list-inline-dashed margin-Bttn">
+								<li>June 21, 2016 at 8:12pm |</li>
+								<li><a href="blog-masonry.html" class="dental">Dental</a></li>
+							</ul>
+							<div class="text-dark-grey margin-Bttn">
+								<p>Bad breath is a deal breaker both in business and in personal life of ours. And while breath fresheners or candies hide it, they do not cure the very problem at hand...</p>
+							</div>
+							<div class="tags group group-sm"><a href="index.html#" class="btn btn-default featured-btn">Dental</a><a href="index.html#" class="featured-btn btn btn-default">Hygiene</a> <a href="index.html#" class="featured-btn btn btn-default">Care</a> </div>
+						</section>
+					</article>
+				</div>
+			</div>
+			<div class="text-center"><a href="services.html" id="featuredBtn" class="btn btn-ellipse btn-primary center makeAN">book a consultation</a></div>
+		</div>
+	</section>
+	<!--    PARALLAX OLAN HISSE SON -->
+	<section class="help text-center clearfix parallax">
+		<div class="ehdim">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 parlaxEhdim">
+						<h2 class="basliq-shrifti uppercase">How we can help</h2>
+						<p>We offer a wide range of procedures to help you get the perfect smile</p><a href="make-an-appointment.html" class="btn btn-ellipse btn-primary makeAN">BOOK AN APPOINTMENT</a></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--    MAP OLAN HISSE SON -->
+	<section class="map clearfix">
+		<div class="map-container">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.3961176341963!2d49.85219521580461!3d40.37791257936958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d079efb5163%3A0xc20aa51a5f0b5e01!2sCode+Academy+Baku!5e0!3m2!1sru!2sru!4v1492689438623" width="100%" height="520" frameborder="0" style="border:0;" scrolling="no" allowfullscreen></iframe>
+		</div>
+	</section>
+	<!--    AXIR ICONLAR OLAN HISSE SON -->
+	<section class="adress">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 endIcons"><span class="orange-c"><i class="fa fa-phone" aria-hidden="true"  ></i></span>
+					<div>
+						<h5 class="text-bold-p"><a href="callto:#" class="text-dark-grey margin-Bttn">1-800-1234-567</a></h5> </div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 endIcons"><span class="orange-c"><i class="fa fa-map-marker" aria-hidden="true"  ></i></span>
+					<div>
+						<h5 class="text-bold-p"><a href="index.html#" class="text-dark-grey margin-Bttn">2130 Fulton Street San Diego, CA 94117-1080 USA</a></h5> </div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 endIcons"><span class="orange-c"><i class="fa fa-envelope-o" aria-hidden="true"  ></i></span>
+					<div>
+						<h5 class="text-bold-p"><a href="mailto:#" class="text-dark-grey margin-Bttn">info@demolink.org</a></h5> </div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--    FOOTER BEGIN -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4"> <img src="images/logo-desc-white.png"> </div>
+				<div class=" col-md-4 col-md-push-4 seymur">
+					<h4 href="#"><i class="fa fa-facebook" aria-hidden="true"></i></h4>
+					<h4 href="#"><i class="fa fa-twitter" aria-hidden="true"></i></h4>
+					<h4 href="#"><i class="fa fa-google" aria-hidden="true"></i></h4>
+					<h4 href="#"><i class="fa fa-rss" aria-hidden="true"></i></h4> </div>
+				<div class="col-md-4 col-md-pull-4">
+					<p>© 2017 All Rights Reserved Terms of Use and Privacy Policy</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--    FOOTER END -->
+</body>
+<script type="text/javascript" src="js/script.js"></script>
+
+</html>
