@@ -8,6 +8,7 @@
 - RD Calendar (https://www.templatemonster.com/help/js-animated-how-to-work-with-rd-calendar.html#gref)
 - Owl Carusel (https://owlcarousel2.github.io/OwlCarousel2/)
 - Counter (https://github.com/bfintal/Counter-Up)
+- Material Datetime Picker (https://github.com/ripjar/material-datetime-picker)
 - ToTop Button (https://markgoodyear.com/labs/scrollup/)
 
 # Tools:
