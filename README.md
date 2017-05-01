@@ -9,6 +9,7 @@
 - Owl Carusel (https://owlcarousel2.github.io/OwlCarousel2/)
 - Counter (https://github.com/bfintal/Counter-Up)
 - Material Datetime Picker (https://github.com/ripjar/material-datetime-picker)
+- Stacktable.js (http://johnpolacek.github.io/stacktable.js/)
 - ToTop Button (https://markgoodyear.com/labs/scrollup/)
 
 # Tools:
